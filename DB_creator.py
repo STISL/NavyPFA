@@ -27,7 +27,7 @@ def createDatabase():
     connection.commit()
 
     #SQL command to insert the data in the table
-    #As of Oct. 17, 2021, ONLY MALES UP TO, BUT NOT INCLUDING, AGE 35-39, HAVE CORRECT, CURRENT STANDARDS!:
+    #As of Oct. 17, 2021, ONLY MALES UP TO, BUT NOT INCLUDING, AGE 40-44, HAVE CORRECT, CURRENT STANDARDS!:
     insert_values = """INSERT INTO PFA_STANDARDS VALUES ('male', '17 to 19', 'Outstanding High', 100, 'do 92 push-ups', 'hold the the position for 3:40', 'complete the run in 8:15', 'complete the row in 7:00', 'complete the swim in 6:30', 'complete the swim in 6:20', 'burn XX calories', 'burn XX calories'),
     ('male', '17 to 19', 'Outstanding Medium', 95, 'do 91 push-ups', 'hold the the position for 3:35', 'complete the run 8:45', 'complete the row in 7:10', 'complete the swim in 6:45', 'complete the swim in 6:35', 'burn XX calories', 'burn XX calories'),
     ('male', '17 to 19', 'Outstanding Low', 90, 'do 86 push-ups', 'hold the position for 3:30', 'complete the run 9:00', 'complete the row in 7:20', 'complete the swim in 7:15', 'complete the swim in 7:05', 'burn XX calories', 'burn XX calories'),
@@ -86,12 +86,12 @@ def createDatabase():
     ('male', '35 to 39', 'Excellent High', 85, 'do 65 push-ups', 'hold the position for 3:04', 'complete the run 10:38', 'complete the row in 7:50', 'complete the swim in 8:23', 'complete the swim in 8:13', 'burn XX calories', 'burn XX calories'),
     ('male', '35 to 39', 'Excellent Medium', 80, 'do 63 push-ups', 'hold the position for 2:57', 'complete the run 11:08', 'complete the row in 8:00', 'complete the swim in 8:38', 'complete the swim in 8:28', 'burn XX calories', 'burn XX calories'),
     ('male', '35 to 39', 'Excellent Low', 75, 'do 60 push-ups', 'hold the position for 2:50', 'complete the run 11:23', 'complete the row in 8:10', 'complete the swim in 9:08', 'complete the swim in 8:58', 'burn XX calories', 'burn XX calories'),
-    ('male', '35 to 39', 'Good High', 70, 'do 68 push-ups', 'hold the position for 2:50', 'complete the run 10:00', 'complete the row in 8:10', 'complete the swim in 9:15', 'complete the swim in 9:05', 'burn XX calories', 'burn XX calories'),
-    ('male', '35 to 39', 'Good Medium', 65, 'do 60 push-ups', 'hold the position for 2:30', 'complete the run 10:30', 'complete the row in 8:30', 'complete the swim in 10:30', 'complete the swim in 10:20', 'burn XX calories', 'burn XX calories'),
-    ('male', '35 to 39', 'Good Low', 60, 'do 51 push-ups', 'hold the position for 2:10', 'complete the run 11:00', 'complete the row in 8:50', 'complete the swim in 11:15', 'complete the swim in 11:05', 'burn XX calories', 'burn XX calories'),
-    ('male', '35 to 39', 'Satisfactory High', 55, 'do 49 push-ups', 'hold the position for 1:50', 'complete the run 12:00', 'complete the row in 9:00', 'complete the swim in 11:45', 'complete the swim in 11:35', 'burn XX calories', 'burn XX calories'),
-    ('male', '35 to 39', 'Satisfactory Medium', 50, 'do 46 push-ups', 'hold the position for 1:30', 'complete the run 12:15', 'complete the row in 9:10', 'complete the swim in 12:15', 'complete the swim in 12:05', 'burn XX calories', 'burn XX calories'),
-    ('male', '35 to 39', 'Probationary', 45, 'do 42 push-ups', 'hold the position for 1:10', 'complete the run 12:45', 'complete the row in 9:20', 'complete the swim in 12:45', 'complete the swim in 12:35', 'burn XX calories', 'burn XX calories'),
+    ('male', '35 to 39', 'Good High', 70, 'do 53 push-ups', 'hold the position for 2:30', 'complete the run 12:23', 'complete the row in 8:30', 'complete the swim in 9:53', 'complete the swim in 9:43', 'burn XX calories', 'burn XX calories'),
+    ('male', '35 to 39', 'Good Medium', 65, 'do 44 push-ups', 'hold the position for 2:10', 'complete the run 13:23', 'complete the row in 8:50', 'complete the swim in 10:53', 'complete the swim in 10:43', 'burn XX calories', 'burn XX calories'),
+    ('male', '35 to 39', 'Good Low', 60, 'do 37 push-ups', 'hold the position for 1:50', 'complete the run 14:08', 'complete the row in 9:10', 'complete the swim in 11:53', 'complete the swim in 11:43', 'burn XX calories', 'burn XX calories'),
+    ('male', '35 to 39', 'Satisfactory High', 55, 'do 35 push-ups', 'hold the position for 1:30', 'complete the run 14:23', 'complete the row in 9:20', 'complete the swim in 12:23', 'complete the swim in 12:13', 'burn XX calories', 'burn XX calories'),
+    ('male', '35 to 39', 'Satisfactory Medium', 50, 'do 33 push-ups', 'hold the position for 1:30', 'complete the run 14:45', 'complete the row in 9:30', 'complete the swim in 12:38', 'complete the swim in 12:28', 'burn XX calories', 'burn XX calories'),
+    ('male', '35 to 39', 'Probationary', 45, 'do 27 push-ups', 'hold the position for 0:50', 'complete the run 15:00', 'complete the row in 9:40', 'complete the swim in 13:23', 'complete the swim in 13:13', 'burn XX calories', 'burn XX calories'),
 
     ('male', '40 to 44','Outstanding High', 100, 'do 92 push-ups', 'hold the position for 3:40', 'complete the run in 8:15', 'complete the row in 7:00', 'complete the swim in 6:30', 'complete the swim in 6:20', 'burn XX calories', 'burn XX calories'),
     ('male', '40 to 44','Outstanding Medium', 95, 'do 91 push-ups', 'hold the position for 3:35', 'complete the run 8:45', 'complete the row in 7:10', 'complete the swim in 6:45', 'complete the swim in 6:35', 'burn XX calories', 'burn XX calories'),
